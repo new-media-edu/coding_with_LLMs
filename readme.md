@@ -14,13 +14,15 @@ Historically I have taught artists how to code. Over the last few years LLMs hav
 This workshop will focus on integrated development environments (namely VS Code), utilizing different LLMs (ChatGPT produces bad results compared to the competition), and make use of the resulting output.
 
 For people interested in making work that deals with technology I advise learning how to program. This class will assume no knowledge and will not engage with the actual code the LLM creates beyond making use of it.
+
 ## Integrated Development Environments
 
 An IDE is basically a text editor with a bunch of extra features that make it useful for software development. At the end of the day, all code is plain text, even if this is obscured through something that makes it appear visual (like Touch Designer).
 
 The extra features of the VS Code IDE that we will use include "Live Server" which makes your computer able to host a live website (for testing purposes in this case), and the ability to organize the various code and components across a project. The other major feature in recent history is the addition of LLMs used to assist in the programming process.
 
-Other popular development environments are
+Other popular development environments are:
+
 + [Windsurf](https://windsurf.com/)
 + [Cursor](https://cursor.com/)
 + [Claude Code](https://code.claude.com/docs/en/overview)
@@ -31,6 +33,7 @@ Other popular development environments are
 ### Alternatives to cloud-based services
 
 For those who would prefer to host their own local models, this is totally possible but requires more configuration than we will cover in during this workshop. I suggest looking into Ollama and the "Continue" extension for VS Code.
+
 ### It often makes mistakes and writes bad code
 
 It will produce code that is incomprehensible. It will be difficult to debug and you will not have any real oversight unless you are very explicit about the structure of code you want produced. It takes some getting used to.
@@ -65,18 +68,18 @@ Because I want the project to be self-contained, create it in a new folder calle
 ### Knowing what to look out for
 
 What seems to go wrong with this first attempt by the LLM?
+
 ## Plan.md
 
 The easiest way to keep things organized is to create and maintain a plan.md file. Some LLMs like Gemini prefer a specific name for this file (GEMINI.md in that case). Here you can give the LLM an overview of what you want to create, any specific parameters for how to get there (if you want it to use three.js instead of P5.js for example), and keep track of changes that are made. This has the added benefit of forcing you to think through your project in detail.
 
 ## Some Tips
 
-If you want to have a UX which conforms to modern standards, one way to achieve that beyond the prompt that you supply is to instruct the LLM to utilize [Apple's Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines)
-
-I often find it helps a lot to use "Thinking" modes for models and to add things like "Look up the solution" to the end of the prompt.
-
-If you want to use this to create a project within a specific development environment, then set that up first.
-
-For example, for a Unity project, create it first and then navigate to the Assets folder in VS Code and open that. The important thing to remember is that you need to give your project the context it needs, but not more than it needs. 
-
-As another example, if you want to create a WordPress project, create a new WP site using Local, then create a new theme folder and work from within that.
++ **Use "Thinking" Modes:** For complex logic, enable reasoning models.
++ **Force Research:** Explicitly add "Look up the current documentation/solution" to prompts to avoid hallucinations about outdated libraries.
++ **Break it Down:** Don't ask for a whole app at once. Ask for the skeleton, then the styling, then the interactivity.
++ **Be Explicit:** Treat the LLM like a talented but literal-minded intern.
++ **Scaffold First:** Create your framework folders (Unity Assets, WordPress themes, etc.) before opening the specific folder in the IDE.
++ **Reference Guidelines:** Instruct the LLM to adhere to specific standards, such as "Apple's Human Interface Guidelines" or "Material Design."
++ **Commit/Save Often:** LLMs often delete functioning code while trying to fix a bug. Use Git source control to save working states frequently.
++ **Feed the Errors:** When code breaks, copy the exact error message from the terminal and paste it back to the LLM.
