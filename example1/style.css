@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #87CEEB;
+    /* Sky blue */
+    overflow: hidden;
+}
+
+#instructions {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 100;
+}
+
+#banana {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    /* Adjust size as needed */
+    display: none;
+    z-index: 10;
+}
+
+.officer {
+    position: absolute;
+    /* height: 150px; Adjust based on image aspect ratio */
+    width: 100px;
+    /* Fixed width for consistency */
+}
