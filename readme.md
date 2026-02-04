@@ -1,5 +1,6 @@
 ## Schedule
 
++ Introduction
 + Overview
 + Using an IDE
 + Using an LLM
@@ -7,11 +8,21 @@
 + Example(s)
 + Now you try
 
+## Introduction
+
+Though the Polymorphic Futures residency called for blockchain projects this workshop will have a broader focus. There is always a wide array of skillsets in these programs and I find it best to assume no prior experience in programming while also offering some techniques that could be useful even to intermediate programmers. For those of you who are already developing smart contracts this will be beneath your skill level but I welcome you to stay regardless if you feel like it.
+
+I won't cover how to develop smart contracts here because it is such a highly specific topic. For people constructing DAOs and similar tools I urge caution as it is complicated yet essential to create secure contracts, otherwise you wil be highly succeptible to attacks.
+
+I included a minimal example in smart_contract/ which can be run inside of [https://remix.ethereum.org](https://remix.ethereum.org). This example shows how to increment, decrement, reset, and retrieve a value on chain. That IDE includes an AI copilot.
+
+I do think that this can be useful for developing aspects of your projects if you are not already familiar with this sort of workflow. Standing up a page or web app for your project can be done much more efficiently this way than using ChatGPT in the browser. And for the other people attending this who are not part of the residency, this could be generally useful to you in creating everything from your personal website to experimental net art projects and beyond.
+
 ## Overview
 
 Historically I have taught artists how to code. Over the last few years LLMs have developed significantly to the point that senior developers use them in their practices. There are certainly instances in which LLMs can not be used reliably to produce usable results, but in general I do find them useful and I wanted to show how they can best be used to bootstrap and/or develop a creative technology project or website.
 
-This workshop will focus on integrated development environments (namely VS Code), utilizing different LLMs (ChatGPT produces bad results compared to the competition), and make use of the resulting output.
+This workshop will focus on integrated development environments (namely VS Code), utilizing different LLMs, and make use of the resulting output.
 
 For people interested in making work that deals with technology I advise learning how to program. This class will assume no knowledge and will not engage with the actual code the LLM creates beyond making use of it.
 
