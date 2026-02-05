@@ -38,7 +38,7 @@ An IDE is basically a text editor with a bunch of extra features that make it us
 
 The extra features of the VS Code IDE that we will use include "Live Server" which makes your computer able to host a live website (for testing purposes in this case), and the ability to organize the various code and components across a project. The other major feature in recent history is the addition of LLMs used to assist in the programming process.
 
-Other popular development environments are:
+Other popular LLM-integrated development environments are:
 
 + [Windsurf](https://windsurf.com/)
 + [Cursor](https://cursor.com/)
@@ -64,7 +64,7 @@ For the purposes of this workshop you will need to download VS Code and create a
 
 ## LLMs
 
-AI has become synonymous with LLM, but it is important to make the distinction. ChatGPT, Claude, Gemini, DeepSeek, etc. are all Large Language Models. They are a very specific type of AI which popular at the moment for language-based tasks and automation. They are quite good with programming languages and have absorbed over a decade of forum posts and programming manuals.
+AI has become synonymous with LLM, but it is important to make the distinction. ChatGPT, Claude, Gemini, DeepSeek, etc. are all Large Language Models. These are examples of a very specific type of AI which is popular at the moment for language-based tasks and automation. They are quite good with programming languages and have absorbed over a decade of forum posts and programming manuals.
 
 I don't need to say much about LLMs since I'm sure everyone has used at least one. ChatGPT has become eponymous with AI/LLM but it is presently the worst one. Since it comes pre-installed on many computers, they have little incentive to improve it. I recommend using Gemini or Claude.
 
@@ -100,3 +100,4 @@ The easiest way to keep things organized is to create and maintain a plan.md fil
 + **Reference Guidelines:** Instruct the LLM to adhere to specific standards, such as "Apple's Human Interface Guidelines" or "Material Design."
 + **Commit/Save Often:** LLMs often delete functioning code while trying to fix a bug. Use Git source control to save working states frequently.
 + **Feed the Errors:** When code breaks, copy the exact error message from the terminal and paste it back to the LLM.
++ **Error Feedback:** Better yet, give the system a way to access its own error log and iterate automatically.
